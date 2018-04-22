@@ -1,0 +1,77 @@
+// Dota Heroes File
+// NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
+// the specified key-value combinations.  Use override_hero <hero_to_override> for this.
+"DOTAHeroes"
+{
+	//=================================================================================================================
+	// HERO: Gay Ranger
+	//=================================================================================================================
+	"npc_dota_hero_gay_ranger"
+	{
+		"override_hero"		"npc_dota_hero_Drow_Ranger"
+		"AttackDamageMin"			"1"									// Damage range min.
+		"AttackDamageMax"			"25"									// Damage range max.
+		"AttackRate"				"0.05"									// Speed of attack.
+		"AttackAnimationPoint"		"0.1"									// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"1000"									// Range within a target can be acquired.
+		"AttackRange"				"800"									// Range within a target can be attacked.
+		"ProjectileModel"			"drow_base_attack"					// Particle system model for projectile.
+		"ProjectileSpeed"			"1250"									// Speed of projectile.
+		
+		"AttributePrimary"				"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"			"0"									// Base strength
+		"AttributeStrengthGain"			"0.0"									// Strength bonus per level.
+		"AttributeBaseIntelligence"		"15"									// Base intelligence
+		"AttributeIntelligenceGain"		"2.0"									// Intelligence bonus per level.
+		"AttributeBaseAgility"			"10"									// Base agility
+		"AttributeAgilityGain"			"1.9"									// Agility bonus per level.
+		
+	}
+
+	//=================================================================================================================
+	// HERO: Speed. I am Speed.
+	//=================================================================================================================
+	"npc_dota_hero_bloodseeker"
+	{
+		"override_hero"		"npc_dota_hero_bloodseeker"
+		"Model"					"models/creeps/nian/nian_creep.vmdl"
+		"Portrait"				""
+		"MinimapIcon"		"minimap_nian"
+		"ModelScale"			"0.3"
+		
+	}
+	
+	//=================================================================================================================
+	// HERO: Rupture 2.0
+	//=================================================================================================================
+	"npc_dota_hero_pudge"
+	{
+		"override_hero"		"npc_dota_hero_pudge"
+		"Model"					"models/items/courier/bearzky_v2/bearzky_v2.vmdl"
+		"Portrait"				""
+		"ModelScale"			"1.5"
+		"DisableWearables"   "1"
+		
+		"Ability1"				"pudge_meat_hook"
+		"Ability2"				"pudge_rot"
+		"Ability3"				"bon_voyage"
+		"Ability4"				""
+		"Ability5"				""
+		"Ability6"				"bloodseeker_rupture"
+	}
+	
+	//=================================================================================================================
+	// HERO: Poster Child of RNG
+	//=================================================================================================================
+	"npc_dota_hero_juggernaut"
+	{
+		"override_hero"		"npc_dota_hero_juggernaut"
+		"AttackRate"			"1.2"									// Speed of attack.
+			"AttributeBaseStrength"			"10"									// Base strength
+		
+		"Ability1"				"chaos_knight_chaos_strike"
+		"Ability2"				"faceless_void_time_lock"
+		"Ability3"				"juggernaut_blade_dance"
+		"Ability4"				"spirit_breaker_greater_bash"
+	}
+}
